@@ -125,6 +125,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
 
   color: var(--title-text-color);
 }
@@ -252,6 +253,7 @@ p {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms var(--timing-function);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -268,6 +270,8 @@ p {
   min-height: 581px;
 
   background-color: var(--primary-white-color);
+
+  transition: transform 250ms var(--timing-function);
 }
 
 .modal-close-button {
@@ -369,7 +373,7 @@ p {
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1,14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -593,8 +597,8 @@ p {
   transform: translateY(101%);
   transition: transform 250ms var(--timing-function);
 }
-.card-thumb:hover .card-overlay,
-.card-thumb:focus .card-overlay {
+.project-link:hover .card-overlay,
+.project-link:focus .card-overlay {
   transform: translateY(0)
   }
 .overlay-info {
@@ -700,7 +704,7 @@ p {
   fill: var(--primary-white-color);
 
   transition: 
-  bacground-color 250ms var(--timing-function),
+  background-color 250ms var(--timing-function),
   fill 250ms var(--timing-function);
 }
 
