@@ -259,19 +259,23 @@ p {
   opacity: 0;
   pointer-events: none;
 }
+
+.backdrop.is-hidden .modal {
+  transition: transform 250ms var(--timing-function);
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-
-
   min-width: 528px;
   min-height: 581px;
 
   background-color: var(--primary-white-color);
 
   transition: transform 250ms var(--timing-function);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal-close-button {
